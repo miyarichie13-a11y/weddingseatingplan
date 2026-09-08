@@ -1,1198 +1,603 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
-
-  <!-- Responsive on iPhone, Android, tablet, laptop and desktop -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="theme-color" content="#f5f1eb">
+  <title>Simone & Edmund | Wedding Seating</title>
 
-  <title>Simone & Eddie | Wedding Table Finder</title>
-
-
-  <!-- Elegant wedding fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  >
-
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
-
-    /* =====================================================
-       RESET
-    ===================================================== */
-
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
-
-    html {
-      width: 100%;
-      min-height: 100%;
-    }
-
-
     body {
-
-      width: 100%;
       min-height: 100vh;
       min-height: 100dvh;
-
-      background:
-        radial-gradient(
-          circle at 50% 0%,
-          #fbfaf7 0%,
-          #f5f1eb 45%,
-          #ebe4da 100%
-        );
-
-      color: #3d3935;
-
-      font-family: "Montserrat", sans-serif;
-
+      background: #f5f1eb;
+      color: #3f3a35;
+      font-family: 'Montserrat', sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
-
       padding: 24px;
-
-      overflow-x: hidden;
     }
-
-
-    /* =====================================================
-       MAIN WRAPPER
-    ===================================================== */
 
     .page {
       width: 100%;
-      max-width: 760px;
-      margin: auto;
+      max-width: 720px;
+      text-align: center;
     }
-
-
-    /* =====================================================
-       CARD
-    ===================================================== */
 
     .card {
-
-      width: 100%;
-
-      background: rgba(253, 251, 248, 0.97);
-
-      border: 1px solid #ded6cc;
-
-      box-shadow:
-        0 25px 80px rgba(70, 60, 50, 0.10);
-
-      text-align: center;
-
-      padding: 65px 70px;
+      background: #fffdfa;
+      border: 1px solid #e6ded5;
+      padding: 70px 60px;
+      box-shadow: 0 12px 40px rgba(63, 58, 53, 0.06);
     }
-
-
-    /* =====================================================
-       TOP LABEL
-    ===================================================== */
-
-    .eyebrow {
-
-      font-size: 10px;
-
-      font-weight: 500;
-
-      letter-spacing: 4px;
-
-      text-transform: uppercase;
-
-      color: #93887b;
-
-      margin-bottom: 25px;
-    }
-
-
-    /* =====================================================
-       MONOGRAM
-    ===================================================== */
 
     .monogram {
-
-      width: 58px;
-      height: 58px;
-
-      margin: 0 auto 28px;
-
-      border: 1px solid #cec4b8;
-
-      border-radius: 50%;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      font-family: "Cormorant Garamond", serif;
-
-      font-size: 23px;
-
-      color: #756b61;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 34px;
+      letter-spacing: 4px;
+      color: #82766b;
+      margin-bottom: 26px;
     }
-
-
-    /* =====================================================
-       NAMES
-    ===================================================== */
 
     .names {
-
-      font-family: "Cormorant Garamond", serif;
-
-      font-size: clamp(58px, 9vw, 86px);
-
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(48px, 8vw, 72px);
       font-weight: 500;
-
-      line-height: 0.82;
-
-      color: #37332f;
+      line-height: 0.95;
+      color: #3f3a35;
+      margin-bottom: 20px;
     }
 
-
-    .and {
-
-      font-family: "Cormorant Garamond", serif;
-
-      font-size: 28px;
-
-      font-style: italic;
-
-      color: #9b9083;
-
-      margin: 17px 0;
+    .ampersand {
+      font-size: 0.65em;
+      font-weight: 400;
+      color: #9b8f83;
+      margin: 0 7px;
     }
 
-
-    /* =====================================================
-       INTRO
-    ===================================================== */
-
-    .intro {
-
-      max-width: 480px;
-
-      margin: 36px auto 40px;
-
-      font-size: 13px;
-
-      line-height: 1.9;
-
-      color: #756e67;
-    }
-
-
-    /* =====================================================
-       SEARCH
-    ===================================================== */
-
-    .search {
-
-      width: 100%;
-
-      max-width: 540px;
-
-      margin: 0 auto;
-    }
-
-
-    .input-label {
-
-      display: block;
-
-      font-size: 9px;
-
-      letter-spacing: 2px;
-
+    .subtitle {
+      font-size: 11px;
+      letter-spacing: 3px;
       text-transform: uppercase;
-
-      color: #968b80;
-
-      margin-bottom: 9px;
+      color: #8c8177;
+      margin-bottom: 48px;
     }
 
+    .instruction {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      color: #514a44;
+      margin-bottom: 22px;
+    }
+
+    .search-area {
+      background: #f8f4ef;
+      border: 1px solid #e3dbd2;
+      padding: 26px;
+      margin: 0 auto;
+      max-width: 570px;
+    }
 
     .search-row {
-
       display: flex;
-
-      width: 100%;
-
-      gap: 10px;
+      gap: 12px;
     }
-
 
     input {
-
       flex: 1;
-
       min-width: 0;
-
       height: 58px;
-
+      border: 1px solid #d8cec4;
+      background: #fffdfa;
       padding: 0 20px;
-
-      border: 1px solid #d3cbc1;
-
-      background: #fffefa;
-
-      color: #393531;
-
-      font-family: "Montserrat", sans-serif;
-
+      font-family: 'Montserrat', sans-serif;
       font-size: 16px;
-
+      color: #3f3a35;
       outline: none;
-
-      border-radius: 0;
-
-      -webkit-appearance: none;
-
-      transition:
-        border-color 0.2s ease,
-        box-shadow 0.2s ease;
+      transition: all 0.2s ease;
     }
-
 
     input::placeholder {
-      color: #aaa39b;
+      color: #aaa098;
     }
-
 
     input:focus {
-
-      border-color: #93877b;
-
-      box-shadow:
-        0 0 0 3px rgba(147, 135, 123, 0.08);
+      border-color: #9b8f83;
+      box-shadow: 0 0 0 3px rgba(155, 143, 131, 0.10);
     }
-
 
     button {
-
       height: 58px;
-
       padding: 0 28px;
-
-      flex-shrink: 0;
-
       border: none;
-
-      background: #47423d;
-
-      color: #ffffff;
-
-      font-family: "Montserrat", sans-serif;
-
-      font-size: 10px;
-
+      background: #6f665e;
+      color: #fffdfa;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
       font-weight: 500;
-
-      letter-spacing: 2px;
-
+      letter-spacing: 1.2px;
       text-transform: uppercase;
-
       cursor: pointer;
-
-      -webkit-tap-highlight-color: transparent;
-
-      transition:
-        background 0.2s ease,
-        transform 0.15s ease;
+      transition: all 0.2s ease;
+      white-space: nowrap;
     }
-
 
     button:hover {
-
-      background: #302d2a;
+      background: #554e48;
+      transform: translateY(-1px);
     }
-
 
     button:active {
-
-      transform: scale(0.98);
+      transform: translateY(0);
     }
 
-
-    /* =====================================================
-       RESULT
-    ===================================================== */
+    .hint {
+      font-size: 11px;
+      color: #9b9188;
+      margin-top: 16px;
+    }
 
     .result {
-
       display: none;
-
-      max-width: 540px;
-
-      margin: 35px auto 0;
-
-      padding: 34px 20px;
-
-      border-top: 1px solid #ded6cc;
-
-      border-bottom: 1px solid #ded6cc;
-
-      animation: fadeIn 0.4s ease;
+      margin: 36px auto 0;
+      padding: 32px 24px;
+      border-top: 1px solid #e5ddd4;
+      border-bottom: 1px solid #e5ddd4;
+      max-width: 570px;
     }
-
 
     .result.show {
       display: block;
     }
 
-
     .welcome {
-
-      font-family: "Cormorant Garamond", serif;
-
-      font-size: 36px;
-
-      font-weight: 500;
-
-      color: #393531;
-
-      margin-bottom: 19px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 30px;
+      color: #514a44;
+      margin-bottom: 10px;
     }
 
-
-    .table-label {
-
-      font-size: 9px;
-
-      letter-spacing: 3px;
-
+    .seated {
+      font-size: 11px;
       text-transform: uppercase;
-
-      color: #93887b;
-
-      margin-bottom: 5px;
+      letter-spacing: 2px;
+      color: #93877c;
+      margin-bottom: 7px;
     }
-
 
     .table-number {
-
-      font-family: "Cormorant Garamond", serif;
-
-      font-size: 62px;
-
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 58px;
       font-weight: 500;
-
-      line-height: 1;
-
-      color: #393531;
+      color: #3f3a35;
+      margin-bottom: 14px;
     }
 
-
-    .celebrate {
-
-      margin-top: 18px;
-
-      font-family: "Cormorant Garamond", serif;
-
-      font-size: 20px;
-
-      font-style: italic;
-
-      color: #756d64;
-
-      line-height: 1.5;
+    .celebration {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 21px;
+      color: #746a61;
     }
-
-
-    /* =====================================================
-       ERROR
-    ===================================================== */
 
     .error {
-
       display: none;
-
-      max-width: 540px;
-
-      margin: 20px auto 0;
-
-      padding: 14px 16px;
-
-      border: 1px solid #e1d5cc;
-
-      background: #f5efeb;
-
-      color: #806a62;
-
-      font-size: 12px;
-
+      margin-top: 22px;
+      font-size: 13px;
       line-height: 1.6;
+      color: #81766d;
     }
-
 
     .error.show {
-
       display: block;
-
-      animation: fadeIn 0.3s ease;
     }
-
-
-    /* =====================================================
-       FOOTER
-    ===================================================== */
 
     .footer {
-
-      margin-top: 32px;
-
-      font-family: "Cormorant Garamond", serif;
-
-      font-size: 19px;
-
-      color: #8b8176;
+      margin-top: 34px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      color: #9a8e84;
     }
 
-
-    /* =====================================================
-       ANIMATION
-    ===================================================== */
-
-    @keyframes fadeIn {
-
-      from {
-        opacity: 0;
-        transform: translateY(8px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-    }
-
-
-    /* =====================================================
-       TABLETS
-    ===================================================== */
-
-    @media (max-width: 700px) {
-
+    @media (max-width: 600px) {
       body {
+        padding: 14px;
+        align-items: center;
+      }
+
+      .card {
+        padding: 48px 22px;
+      }
+
+      .monogram {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      .names {
+        font-size: clamp(42px, 13vw, 58px);
+        line-height: 1;
+      }
+
+      .ampersand {
+        display: block;
+        font-size: 0.5em;
+        margin: 5px 0;
+      }
+
+      .subtitle {
+        font-size: 9px;
+        letter-spacing: 2.2px;
+        margin-bottom: 38px;
+      }
+
+      .instruction {
+        font-size: 23px;
+        margin-bottom: 20px;
+      }
+
+      .search-area {
         padding: 20px;
       }
 
-      .card {
-        padding: 55px 35px;
-      }
-
-      .names {
-        font-size: clamp(54px, 13vw, 72px);
-      }
-
-    }
-
-
-    /* =====================================================
-       MOBILE
-    ===================================================== */
-
-    @media (max-width: 560px) {
-
-      body {
-
-        align-items: flex-start;
-
-        padding: 14px;
-      }
-
-
-      .page {
-
-        margin-top: 14px;
-        margin-bottom: 14px;
-      }
-
-
-      .card {
-
-        padding: 43px 20px 38px;
-
-        box-shadow:
-          0 15px 45px rgba(70, 60, 50, 0.08);
-      }
-
-
-      .eyebrow {
-
-        font-size: 9px;
-
-        letter-spacing: 3px;
-
-        margin-bottom: 21px;
-      }
-
-
-      .monogram {
-
-        width: 52px;
-        height: 52px;
-
-        margin-bottom: 23px;
-
-        font-size: 21px;
-      }
-
-
-      .names {
-
-        font-size: clamp(49px, 16vw, 68px);
-      }
-
-
-      .and {
-
-        font-size: 24px;
-
-        margin: 14px 0;
-      }
-
-
-      .intro {
-
-        margin: 30px auto 32px;
-
-        font-size: 12px;
-
-        line-height: 1.8;
-      }
-
-
-      .search {
-
-        max-width: 100%;
-      }
-
-
-      .input-label {
-
-        font-size: 8px;
-
-        margin-bottom: 8px;
-      }
-
-
-      /* Stack input and button on phones */
-
       .search-row {
-
         flex-direction: column;
-
-        gap: 9px;
+        gap: 12px;
       }
 
-
-      input {
-
+      input,
+      button {
         width: 100%;
-
         height: 58px;
-
-        font-size: 16px;
-
-        text-align: center;
       }
-
 
       button {
-
-        width: 100%;
-
-        height: 58px;
-
-        padding: 0 15px;
-
-        font-size: 10px;
+        padding: 0 20px;
       }
-
 
       .result {
-
         margin-top: 30px;
-
-        padding: 29px 10px;
+        padding: 28px 18px;
       }
-
 
       .welcome {
-
-        font-size: 31px;
-
-        margin-bottom: 17px;
+        font-size: 27px;
       }
-
 
       .table-number {
-
-        font-size: 57px;
+        font-size: 52px;
       }
 
-
-      .celebrate {
-
-        font-size: 18px;
-
-        margin-top: 16px;
+      .celebration {
+        font-size: 19px;
       }
-
-
-      .footer {
-
-        margin-top: 27px;
-
-        font-size: 18px;
-      }
-
     }
 
-
-    /* =====================================================
-       VERY SMALL PHONES
-    ===================================================== */
-
-    @media (max-width: 370px) {
-
-      body {
-        padding: 10px;
-      }
-
-
+    @media (min-width: 601px) and (max-width: 800px) {
       .card {
-        padding: 37px 17px 32px;
+        padding: 60px 40px;
       }
-
-
-      .names {
-        font-size: 48px;
-      }
-
-
-      .intro {
-        font-size: 11.5px;
-      }
-
-
-      .welcome {
-        font-size: 28px;
-      }
-
     }
-
-
-    /* =====================================================
-       LARGE DESKTOP
-    ===================================================== */
-
-    @media (min-width: 1000px) {
-
-      body {
-        padding: 60px;
-      }
-
-
-      .page {
-        max-width: 820px;
-      }
-
-
-      .card {
-        padding: 80px 90px;
-      }
-
-
-      .eyebrow {
-        margin-bottom: 28px;
-      }
-
-
-      .intro {
-        font-size: 14px;
-
-        margin-top: 40px;
-
-        margin-bottom: 44px;
-      }
-
-
-      .search {
-        max-width: 580px;
-      }
-
-    }
-
   </style>
-
 </head>
-
 
 <body>
 
-
   <main class="page">
-
     <section class="card">
 
+      <div class="monogram">S & E</div>
 
-      <!-- HEADER -->
+      <!-- Edmund is intentionally FIRST -->
+      <h1 class="names">
+        Edmund <span class="ampersand">&</span> Simone
+      </h1>
 
-      <div class="eyebrow">
-        Welcome to our wedding
-      </div>
+      <p class="subtitle">Our Wedding Celebration</p>
 
+      <h2 class="instruction">Find your table</h2>
 
-      <!-- MONOGRAM -->
-
-      <div class="monogram">
-        S&nbsp;&amp;&nbsp;E
-      </div>
-
-
-      <!-- COUPLE -->
-
-      <div class="names">
-        Simone
-      </div>
-
-      <div class="and">
-        &amp;
-      </div>
-
-      <div class="names">
-        Eddie
-      </div>
-
-
-      <!-- INTRO -->
-
-      <p class="intro">
-
-        We're so happy you're here.
-        Please enter your name below to find your table
-        and join us in celebrating our special day.
-
-      </p>
-
-
-      <!-- SEARCH -->
-
-      <div class="search">
-
-        <label
-          class="input-label"
-          for="nameInput"
-        >
-          Find your table
-        </label>
-
+      <div class="search-area">
 
         <div class="search-row">
-
           <input
-            id="nameInput"
             type="text"
+            id="guestName"
             placeholder="Enter your first or full name"
             autocomplete="off"
-            autocapitalize="words"
-            spellcheck="false"
-            aria-label="Enter your first or full name"
+            aria-label="Enter your name"
           >
 
-
-          <button
-            id="findButton"
-            type="button"
-          >
+          <button onclick="findTable()">
             Find My Table
           </button>
-
         </div>
+
+        <p class="hint">
+          You can enter your first name or your full name
+        </p>
 
       </div>
 
-
-      <!-- RESULT -->
-
-      <div
-        id="result"
-        class="result"
-        aria-live="polite"
-      >
-
-        <div
-          id="welcome"
-          class="welcome"
-        ></div>
-
-
-        <div class="table-label">
-          You are seated at
-        </div>
-
-
-        <div
-          id="tableNumber"
-          class="table-number"
-        ></div>
-
-
-        <div class="celebrate">
+      <div id="result" class="result">
+        <div id="welcome" class="welcome"></div>
+        <div class="seated">You are seated at</div>
+        <div id="tableNumber" class="table-number"></div>
+        <div class="celebration">
           We can't wait to celebrate with you ♡
         </div>
-
       </div>
 
-
-      <!-- ERROR -->
-
-      <div
-        id="error"
-        class="error"
-        aria-live="polite"
-      ></div>
-
-
-      <!-- FOOTER -->
+      <div id="error" class="error"></div>
 
       <div class="footer">
-        With love, Simone &amp; Eddie
+        With love, Edmund & Simone
       </div>
 
-
     </section>
-
   </main>
-
 
 
   <script>
 
+    const tables = {
 
-    /* =====================================================
-       GUEST LIST
-    ===================================================== */
+      "Top Table": [
+        "Carol Clairmont",
+        "Tony Clairmont",
+        "Clive Richardson",
+        "Alison Richardson",
+        "Simone Richardson",
+        "Edmund Mawoko",
+        "Andrew Clarke",
+        "Tapiwa Machamire",
+        "Caroline Machamire"
+      ],
 
-    const guests = [
+      "Table 1": [
+        "Annie Chinembiri",
+        "Gordon Chinembiri",
+        "Chenge Burrs",
+        "Larry Burrs",
+        "Kelly Binafeigha",
+        "Steve Binafeigha",
+        "Oliver Machamire",
+        "Skha Machamire",
+        "Margret Dube",
+        "Jane Buckland"
+      ],
 
-      /* TOP TABLE */
+      "Table 2": [
+        "Joyce Drummond",
+        "Beverly Drummond",
+        "Roy Drummond",
+        "Susan Drummond",
+        "Kuda Mugabe",
+        "Brian Murambatsvina",
+        "Andrew Mawoko",
+        "Linear Mawoko",
+        "Bright Mawoko",
+        "Clara Mawoko"
+      ],
 
-      { name: "Carol Clairmont", table: "Top Table" },
-      { name: "Tony Clairmont", table: "Top Table" },
-      { name: "Clive Richardson", table: "Top Table" },
-      { name: "Alison Richardson", table: "Top Table" },
-      { name: "Simone Richardson", table: "Top Table" },
-      { name: "Eddie Mawoko", table: "Top Table" },
-      { name: "Andrew Clarke", table: "Top Table" },
-      { name: "Tapiwa Machamire", table: "Top Table" },
-      { name: "Caroline Machamire", table: "Top Table" },
+      "Table 3": [
+        "Roseth Brown",
+        "Winston Brown",
+        "George Richardson",
+        "Tracey-Ann Richardson",
+        "Rollin Richardson",
+        "Sophia Richardson",
+        "Berris Thomas",
+        "Debbie Thomas",
+        "Everton Richardson"
+      ],
 
+      "Table 4": [
+        "Jennea Edwards",
+        "Miya Richardson",
+        "Chante Richardson",
+        "Briana Walker",
+        "Britney Richardson",
+        "Chantelle Brown",
+        "Cheyane Brown",
+        "Asharn Richardson",
+        "De'Andre Richardson",
+        "Remario Richardson"
+      ],
 
-      /* TABLE 1 */
+      "Table 5": [
+        "Jason Duncombe",
+        "Sherika Duncombe",
+        "Duane Wright",
+        "Judine Williamson-Wright",
+        "Pauline Evans",
+        "Ryan Richardson",
+        "Njebe Zulu",
+        "Christer Muloba",
+        "Fostino Kaloshi",
+        "Evelyn Kaloshi",
+        "Carmen Lynch"
+      ],
 
-      { name: "Annie Chinembiri", table: "Table 1" },
-      { name: "Gordon Chinembiri", table: "Table 1" },
-      { name: "Chenge Burrs", table: "Table 1" },
-      { name: "Larry Burrs", table: "Table 1" },
-      { name: "Kelly Binafeigha", table: "Table 1" },
-      { name: "Steve Binafeigha", table: "Table 1" },
-      { name: "Oliver Machamire", table: "Table 1" },
-      { name: "Skha Machamire", table: "Table 1" },
-      { name: "Margret Dube", table: "Table 1" },
-      { name: "Jane Buckland", table: "Table 1" },
+      "Table 6": [
+        "Jason Walker",
+        "Charlene Walker",
+        "Tameka Thomas",
+        "Alicia Richardson",
+        "Nikisha Brown",
+        "Donna Walker",
+        "Timon Fermin",
+        "Dariann Fermin",
+        "Venica Jackson",
+        "Noel Jackson"
+      ],
 
+      "Table 7": [
+        "Dylan Newman",
+        "Wale Adenugba",
+        "Tobi Adediran",
+        "Shona Trust-Adediran",
+        "Kimberley White",
+        "Chilala Hankombo",
+        "Gustav Nyberg",
+        "Sabrina Gordon",
+        "Brandon Gordon",
+        "Chad-lee Brown"
+      ],
 
-      /* TABLE 2 */
+      "Table 8": [
+        "Nneka Patrick",
+        "Edwin Appiah",
+        "Ayprel Greenland",
+        "Liam Myrie",
+        "Melkem Okotchi",
+        "Ibrahim Shitta",
+        "Sian Millanse",
+        "Bianca Gillin",
+        "Giselle King",
+        "Christopher James Nicholls",
+        "Josephine Wilkinson"
+      ],
 
-      { name: "Joyce Drummond", table: "Table 2" },
-      { name: "Beverly Drummond", table: "Table 2" },
-      { name: "Roy Drummond", table: "Table 2" },
-      { name: "Susan Drummond", table: "Table 2" },
-      { name: "Kuda Mugabe", table: "Table 2" },
-      { name: "Brian Murambatsvina", table: "Table 2" },
-      { name: "Andrew Mawoko", table: "Table 2" },
-      { name: "Linear Mawoko", table: "Table 2" },
-      { name: "Bright Mawoko", table: "Table 2" },
-      { name: "Clara Mawoko", table: "Table 2" },
+      "Table 9": [
+        "Michael Agyei",
+        "Warren Gillin",
+        "Kavan Burton",
+        "Reece Mothersille",
+        "Amber Mothersille",
+        "Lily Vital",
+        "Alicia Chinembiri",
+        "Enoch Chinembiri",
+        "Tino Chinembiri",
+        "Fred Mutenure"
+      ]
 
+    };
 
-      /* TABLE 3 */
-
-      { name: "Roseth Brown", table: "Table 3" },
-      { name: "Winston Brown", table: "Table 3" },
-      { name: "George Richardson", table: "Table 3" },
-      { name: "Tracey-Ann Richardson", table: "Table 3" },
-      { name: "Rollin Richardson", table: "Table 3" },
-      { name: "Sophia Richardson", table: "Table 3" },
-      { name: "Berris Thomas", table: "Table 3" },
-      { name: "Debbie Thomas", table: "Table 3" },
-      { name: "Everton Richardson", table: "Table 3" },
-
-
-      /* TABLE 4 */
-
-      { name: "Jennea Edwards", table: "Table 4" },
-      { name: "Miya Richardson", table: "Table 4" },
-      { name: "Chante Richardson", table: "Table 4" },
-      { name: "Briana Walker", table: "Table 4" },
-      { name: "Britney Richardson", table: "Table 4" },
-      { name: "Chantelle Brown", table: "Table 4" },
-      { name: "Cheyane Brown", table: "Table 4" },
-      { name: "Asharn Richardson", table: "Table 4" },
-      { name: "De'Andre Richardson", table: "Table 4" },
-      { name: "Remario Richardson", table: "Table 4" },
-
-
-      /* TABLE 5 */
-
-      { name: "Jason Duncombe", table: "Table 5" },
-      { name: "Sherika Duncombe", table: "Table 5" },
-      { name: "Duane Wright", table: "Table 5" },
-      { name: "Judine Williamson-Wright", table: "Table 5" },
-      { name: "Pauline Evans", table: "Table 5" },
-      { name: "Ryan Richardson", table: "Table 5" },
-      { name: "Njebe Zulu", table: "Table 5" },
-      { name: "Christer Muloba", table: "Table 5" },
-      { name: "Fostino Kaloshi", table: "Table 5" },
-      { name: "Evelyn Kaloshi", table: "Table 5" },
-      { name: "Carmen Lynch", table: "Table 5" },
-
-
-      /* TABLE 6 */
-
-      { name: "Jason Walker", table: "Table 6" },
-      { name: "Charlene Walker", table: "Table 6" },
-      { name: "Tameka Thomas", table: "Table 6" },
-      { name: "Alicia Richardson", table: "Table 6" },
-      { name: "Nikisha Brown", table: "Table 6" },
-      { name: "Donna Walker", table: "Table 6" },
-      { name: "Timon Fermin", table: "Table 6" },
-      { name: "Dariann Fermin", table: "Table 6" },
-      { name: "Venica Jackson", table: "Table 6" },
-      { name: "Noel Jackson", table: "Table 6" },
-
-
-      /* TABLE 7 */
-
-      { name: "Dylan Newman", table: "Table 7" },
-      { name: "Wale Adenugba", table: "Table 7" },
-      { name: "Tobi Adediran", table: "Table 7" },
-      { name: "Shona Trust-Adediran", table: "Table 7" },
-      { name: "Kimberley White", table: "Table 7" },
-      { name: "Chilala Hankombo", table: "Table 7" },
-      { name: "Gustav Nyberg", table: "Table 7" },
-      { name: "Sabrina Gordon", table: "Table 7" },
-      { name: "Brandon Gordon", table: "Table 7" },
-      { name: "Chad-lee Brown", table: "Table 7" },
-
-
-      /* TABLE 8 */
-
-      { name: "Nneka Patrick", table: "Table 8" },
-      { name: "Edwin Appiah", table: "Table 8" },
-      { name: "Ayprel Greenland", table: "Table 8" },
-      { name: "Liam Myrie", table: "Table 8" },
-      { name: "Melkem Okotchi", table: "Table 8" },
-      { name: "Ibrahim Shitta", table: "Table 8" },
-      { name: "Sian Millanse", table: "Table 8" },
-      { name: "Bianca Gillin", table: "Table 8" },
-      { name: "Giselle King", table: "Table 8" },
-      { name: "Christopher James Nicholls", table: "Table 8" },
-      { name: "Josephine Wilkinson", table: "Table 8" },
-
-
-      /* TABLE 9 */
-
-      { name: "Michael Agyei", table: "Table 9" },
-      { name: "Warren Gillin", table: "Table 9" },
-      { name: "Kavan Burton", table: "Table 9" },
-      { name: "Reece Mothersille", table: "Table 9" },
-      { name: "Amber Mothersille", table: "Table 9" },
-      { name: "Lily Vital", table: "Table 9" },
-      { name: "Alicia Chinembiri", table: "Table 9" },
-      { name: "Enoch Chinembiri", table: "Table 9" },
-      { name: "Tino Chinembiri", table: "Table 9" },
-      { name: "Fred Mutenure", table: "Table 9" }
-
-    ];
-
-
-
-    /* =====================================================
-       NORMALISE SEARCH
-    ===================================================== */
-
-    function normalise(value) {
-
-      return value
-        .toLowerCase()
-        .trim()
-        .replace(/\s+/g, " ");
-
-    }
-
-
-
-    /* =====================================================
-       FIRST NAME
-    ===================================================== */
-
-    function getFirstName(fullName) {
-
-      return fullName.split(" ")[0];
-
-    }
-
-
-
-    /* =====================================================
-       FIND TABLE
-    ===================================================== */
 
     function findTable() {
 
-      const input =
-        document.getElementById("nameInput").value;
+      const input = document
+        .getElementById("guestName")
+        .value
+        .trim()
+        .toLowerCase();
 
-      const searchTerm =
-        normalise(input);
-
-      const result =
-        document.getElementById("result");
-
-      const error =
-        document.getElementById("error");
-
-      const welcome =
-        document.getElementById("welcome");
-
-      const tableNumber =
-        document.getElementById("tableNumber");
-
-
-      /* Reset */
+      const result = document.getElementById("result");
+      const error = document.getElementById("error");
 
       result.classList.remove("show");
-
       error.classList.remove("show");
 
-      error.innerHTML = "";
-
-
-      /* Empty search */
-
-      if (!searchTerm) {
-
-        error.innerHTML =
-          "Please enter your name to find your table.";
-
+      if (!input) {
+        error.textContent = "Please enter your name to find your table.";
         error.classList.add("show");
-
         return;
       }
 
 
-      /* ==================================================
-         EXACT FULL NAME SEARCH
-      ================================================== */
-
-      let matches = guests.filter(function(guest) {
-
-        return normalise(guest.name) === searchTerm;
-
-      });
+      let matches = [];
 
 
-      /* ==================================================
-         PARTIAL SEARCH
-      ================================================== */
+      // Search all guests
+      for (const [table, guests] of Object.entries(tables)) {
 
-      if (matches.length === 0) {
+        guests.forEach(guest => {
 
-        matches = guests.filter(function(guest) {
+          const guestLower = guest.toLowerCase();
 
-          return normalise(guest.name)
-            .includes(searchTerm);
+          // Exact full-name match
+          if (guestLower === input) {
+            matches.push({
+              name: guest,
+              table: table
+            });
+          }
 
         });
 
       }
 
 
-      /* ==================================================
-         NO MATCH
-      ================================================== */
-
+      // If no exact match, search by first name
       if (matches.length === 0) {
 
-        error.innerHTML =
-          "We couldn't find that name. " +
-          "Please check the spelling and try again.";
+        for (const [table, guests] of Object.entries(tables)) {
+
+          guests.forEach(guest => {
+
+            const firstName = guest
+              .split(" ")[0]
+              .toLowerCase();
+
+            if (firstName === input) {
+              matches.push({
+                name: guest,
+                table: table
+              });
+            }
+
+          });
+
+        }
+
+      }
+
+
+      // No match
+      if (matches.length === 0) {
+
+        error.textContent =
+          "We couldn't find that name. Please check the spelling and try again.";
 
         error.classList.add("show");
-
         return;
       }
 
 
-      /* ==================================================
-         MULTIPLE MATCHES
-      ================================================== */
-
+      // More than one person with same first name
       if (matches.length > 1) {
 
-        error.innerHTML =
-          "We found more than one guest with that name. " +
-          "Please enter your first and last name.";
+        const names = matches
+          .map(person => person.name)
+          .join(" or ");
+
+        error.textContent =
+          "We found more than one guest with that first name. Please enter your first and last name, for example: " + names;
 
         error.classList.add("show");
-
         return;
       }
 
-
-      /* ==================================================
-         MATCH FOUND
-      ================================================== */
 
       const guest = matches[0];
 
 
-      welcome.textContent =
-        "Welcome, " + getFirstName(guest.name) + "!";
+      // Get first name for welcome message
+      const firstName = guest.name.split(" ")[0];
 
 
-      tableNumber.textContent =
+      document.getElementById("welcome").textContent =
+        "Welcome, " + firstName + "!";
+
+      document.getElementById("tableNumber").textContent =
         guest.table;
-
 
       result.classList.add("show");
 
 
-      /* Bring result into view on phones */
-
-      setTimeout(function() {
+      // Smoothly scroll to result on mobile
+      setTimeout(() => {
 
         result.scrollIntoView({
           behavior: "smooth",
@@ -1204,53 +609,19 @@
     }
 
 
-
-    /* =====================================================
-       BUTTON
-    ===================================================== */
-
-    document
-      .getElementById("findButton")
-      .addEventListener("click", findTable);
-
-
-
-    /* =====================================================
-       ENTER KEY
-    ===================================================== */
-
-    document
-      .getElementById("nameInput")
-      .addEventListener("keydown", function(event) {
+    // Allow Enter key to search
+    document.getElementById("guestName").addEventListener(
+      "keydown",
+      function(event) {
 
         if (event.key === "Enter") {
-
-          event.preventDefault();
-
           findTable();
-
         }
 
-      });
-
-
-
-    /* =====================================================
-       REMOVE ERROR WHEN USER TYPES AGAIN
-    ===================================================== */
-
-    document
-      .getElementById("nameInput")
-      .addEventListener("input", function() {
-
-        document
-          .getElementById("error")
-          .classList.remove("show");
-
-      });
+      }
+    );
 
   </script>
 
 </body>
-
 </html>
